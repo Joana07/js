@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react';
 import './App.css';
 import Person from "./Components/Person";
@@ -11,4 +12,27 @@ function App() {
     </>
   );
 }
+=======
+import { useState } from 'react'
+import './App.css'
+import Form from './components/Form'
+import Display from './components/Display'
+
+
+function App() {
+  const [firstName, setfirstName] = useState("")
+  const [lastName, setlastName] = useState("")
+  const [email, setemail] = useState("")
+  const [password, setpassword] = useState("")
+  const [confirmPassword, setconfirmPassword] = useState("")
+  
+  return (
+    <>
+     <Form setfirstName={setfirstName} setlasttName={setlastName}setemail={setemail} setpassword={setpassword}setconfirmPassword={setconfirmPassword}/>
+     <Display firstName={firstName} lasttName={lastName} email={email}  confirmPassword={confirmPassword}/>
+    </>
+  )
+}
+
+>>>>>>> f7c774c ( I am going to push my folder)
 export default App
